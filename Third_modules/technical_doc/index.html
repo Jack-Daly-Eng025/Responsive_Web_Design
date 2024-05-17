@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header>GDSCRIPT Documentation</header>
+        <ul>
+        <li><a  class="nav-link" href="#Getting_Started">Getting Started</a></li>
+        <li><a class="nav-link" href="#GDSCRIPT_Entry_Point">GDSCRIPT Entry Point</a></li>
+        <li><a class="nav-link" href="#Print_to_console">Print to console</a></li>
+        <li><a class="nav-link" href="#Declaring_Functions">Declaring Functions</a></li>
+ 
+        <li><a  class="nav-link" href="#Object_Orientated_Programming">Object Orientated Programming</a></li>
+    </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+
+            <p>GDScript evolved as a custom scripting language to be used with the Godot computer (and mobile device) Game engine, and for those people who look beyond the real world, it also supports Virtual Reality.</p>
+            <p>Steps in getting started.</p>
+            <ol><li>Download Godot-Most recent version.</li>
+            <li>Set up Visual Studio Code extension for Godot</li>
+            <li>Confugure your enviroment preferences in the editor settings</li>
+            <li>Start a project within Godot and open it again in Visual Studio Code</li>
+            <li>Code up Hello World and enjoy. </li></ol>
+            <code>Inputs to functions are called arguments. There may be no arguments, a list of arguments, type specified arguments, and arguments with default values.
+
+                extends Node2D
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	add(5, 6) # Prints 11 to Output window
+	var sum = get_sum(2, 4) # Sets sum to 6
+	var my_int = add_ints(sum, 4) # Sets my_int to 10
+	my_int = times_2(my_int) # sets my_int to 20
+	move_x(self, my_int) # Move this node 20 pixels along x axis
+	move_x(self) # Move by the default value
+
+# This function has no return value
+func add(a, b):
+	print(a + b)
+
+# This function returns a value
+func get_sum(a, b):
+	return a + b
+
+# This function will only accept integer arguments
+func add_ints(a: int, b: int):
+	return a + b
+
+# Generate an error if the return value is not an int
+func times_2(n) -> int:
+	return 2 * n
+
+# This function modifies an object that is passed by reference
+func move_x(node: Node2D, dx = 1.5):
+	node.position.x += dx
+            </code>
+        </section>
+        <section class="main-section" id="GDSCRIPT_Entry_Point">
+            <header>GDSCRIPT Entry Point</header>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <code></code>
+        </section>
+        <section class="main-section" id="Print_to_console">
+            <header>Print to console</header>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <code></code>
+        </section>
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <code></code>
+        </section>
+        <section class="main-section" id="Object_Orientated_Programming">
+            <header>Object Orientated Programming</header>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <p>Blah Blah</p>
+            <code></code>
+        </section>
+      </main>
+        <script src="" async defer></script>
+    </body>
+</html>

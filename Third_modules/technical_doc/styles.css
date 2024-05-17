@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+   background-color: aqua;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segeo UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   color: black;
+  
+  }
+  
+  section{
+    margin-top: 40px;
+  }
+  
+  #navbar{
+    background-color: #fff3f3;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  
+  #navbar li {
+    color:black; 
+    border-top: 1px solid white;
+    list-style: none;
+  
+  }
+  #navbar a{
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  navbar a:hover{
+    font-weight: 500;
+    text-indent: 5px;
+    transition: text-indent 3s ease-in-out;
+  }
+  
+  p{
+    margin: 10px;
+  }
+  
+  ol{
+    margin-left: 30px;
+  }
+  
+  #main-doc{
+    margin: 0 auto;
+  }
+  
+  header{
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    white-space:pre;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 736px){
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
