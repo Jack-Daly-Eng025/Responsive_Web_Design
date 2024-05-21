@@ -1,0 +1,73 @@
+
+:root{
+    --bgcolor: #fffffe;
+    --textcolor: #2b2c34;
+    --bgfocus: #2b2c34;
+    --paragraph: #6246ea;
+}
+*{  margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   
+    font-family: 'Noto Serif','Times New Roman', Times, serif;
+    text-align: center;
+    background-color: var(--bgcolor);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+
+}
+
+h1{
+    font-size: 60px;
+}
+#nav-bar{
+    display: flex;
+    justify-content:  center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var();
+    padding: 20px 0px;
+    font-size: 20px;
+    border-bottom: 1px solid var(--bgfocus);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--textcolor);
+}
+.nav-link a:hover{
+    text-decoration: underline;
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 70px 0px;
+}
+
+#welcome-section{
+    background-color: var(--bgcolor)
+    color: var(--textcolor);
+}
+
+#welcome-section h1{
+    margin-top: 30vh;
+}
+
+#welcome-section p{
+    color: var(--paragraph);
+    font-size: 25px;
+    margin: 25px 0px;
+    font-style: italic;
+}
