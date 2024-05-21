@@ -1,8 +1,10 @@
 
 :root{
     --bgcolor: #fffffe;
+    --bgcolor2: #d1d1e9;
+    --bgcolor3: #e45858;
     --textcolor: #2b2c34;
-    --bgfocus: #2b2c34;
+    --bgfocus: #d1d1e9;
     --paragraph: #6246ea;
 }
 *{  margin: 0;
@@ -29,7 +31,7 @@ h1{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var();
+    background-color: var(--bgcolor2);
     padding: 20px 0px;
     font-size: 20px;
     border-bottom: 1px solid var(--bgfocus);
@@ -66,8 +68,85 @@ section{
 }
 
 #welcome-section p{
-    color: var(--paragraph);
+    color: var(--bgcolor3);
     font-size: 25px;
     margin: 25px 0px;
     font-style: italic;
+}
+
+#projects .project-tile{
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgcolor3);
+    color: var(--bgfocus);
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 8px 8px 8px 8px rgba(201, 104,104, 0.5);
+}
+#projects .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects h1{
+    background-color: var(--bgcolor3);
+    border: 5px solid var(--bgcolor);
+    width: fit-content;
+    margin: auto;
+  
+}
+#projects .project-tile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-tile p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+#projects .project-tile span{
+    opacity: 0%;
+    padding: 0 5px;
+}
+
+#projects .project-tile:hover span{
+    opacity: 100%;
+    color: var(--bgcolor2);
+    transition: opacity 0.25s ease-in;
+}
+
+.show-all{
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 15px;
+    background-color: var(--bgcolor3);
+    color: var(--textcolor);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+
+
+}
+
+.show-all:hover{
+    background-color: var(--bgfocus);
+    color: var(--paragraph)
+
 }
