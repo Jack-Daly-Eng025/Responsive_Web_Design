@@ -98,3 +98,23 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 10px;
 }
+
+#video{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    color: var(--color2);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 30px;
+}
+
+@media screen and (max-width: 680px) {
+    #audio{
+        width: 70%;
+        height: 100vh;
+    }
+    
+} 
