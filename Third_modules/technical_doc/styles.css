@@ -2,8 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    
   }
   
+html{
+  scroll-behavior: smooth;
+}
   body{
    background-color: aqua;
    display: flex;
@@ -23,8 +27,10 @@
     color: black;
     width: 100%;
     border-bottom: 1px solid white;
+    resize: horizontal;
+    overflow-x: scroll;
   }
-  
+
   #navbar li {
     color:black; 
     border-top: 1px solid white;
@@ -38,12 +44,13 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
+    transition: text-indent 0.3s ease-in-out;
   }
   
-  navbar a:hover{
+  #navbar a:hover{
     font-weight: 500;
     text-indent: 5px;
-    transition: text-indent 3s ease-in-out;
+  
   }
   
   p{
@@ -65,7 +72,7 @@
     font-size: 1.8rem;
     font-weight: 500;
   }
-  
+
   code {
     display: block;
     text-align: left;
@@ -78,9 +85,35 @@
     margin: 10px;
     border-radius: 5px;
   }
-  @media screen and (max-width: 736px){
-    html {
-      width: 100vw;
-      height: 100vh;
+
+  .image{
+    width: 100%;
+  }
+
+  footer{
+    padding: 30px;
+    text-align: center;
+    color: black;
+  }
+  @media screen and (max-width: 815px){
+    body {
+     flex-direction: row;
+    }
+    #navbar{
+
+      width: 300px;
+      position: fixed;
+      height: 100%;
+  
+
+    }
+
+    .image{
+      width: 70%;
+      margin-left: 20px;
+    }
+    #main-doc{
+      margin: 0px 20px;
+      margin-left: 350px;
     }
   }
